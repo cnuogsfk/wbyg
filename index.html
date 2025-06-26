@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>实地图像与操作演示</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f8f8f8;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      max-width: 960px;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    img, video, iframe {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    video {
+      background: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 插入图片 -->
+    <img src="屏幕截图 2025-06-26 135301.png" alt="实地图片1">
+    <img src="屏幕截图 2025-06-26 135124.png" alt="实地图片2">
+
+    <!-- 插入本地视频文件 -->
+    <video controls>
+      <source src="屏幕录制 2025-06-26 212158.mp4" type="video/mp4">
+      您的浏览器不支持 video 标签。
+    </video>
+
+    <!-- 或者插入 Bilibili 视频（替换 bvid 即可） -->
+    <!--
+    <iframe src="https://player.bilibili.com/player.html?bvid=BV1xxxxxxx"
+            frameborder="no"
+            scrolling="no"
+            allowfullscreen="true"
+            style="height:500px;">
+    </iframe>
+    -->
+  </div>
+</body>
+</html>
